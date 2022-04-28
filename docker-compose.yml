@@ -1,0 +1,13 @@
+version: "3"
+services:
+  postgres:
+    image: postgres
+    container_name: "typeorm-postgres"
+    ports:
+      - "5445:5432"
+    environment:
+      POSTGRES_USER: "test"
+      POSTGRES_PASSWORD: "test"
+      POSTGRES_DB: "test"
+networks:
+  typeorm:
